@@ -129,7 +129,7 @@
 
     const oldDeleteButton = Array.from(lifecycleActions.querySelectorAll('button.danger'))
       .find((button) => button.querySelector('strong')?.textContent?.trim() === 'حذف المدرسة نهائيًا');
-    if (oldDeleteButton) oldDeleteButton.hidden = true;
+    if (oldDeleteButton) oldDeleteButton.remove();
 
     const button = document.createElement('button');
     button.type = 'button';
